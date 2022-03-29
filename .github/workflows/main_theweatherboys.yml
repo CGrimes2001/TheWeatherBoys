@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'TheWeatherBoys'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3583AB3AFBD847538CA001E4B2F7F387 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8505638E85644A2CAEBE33D744765A77 }}
           package: .
