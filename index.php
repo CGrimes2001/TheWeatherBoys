@@ -10,4 +10,4 @@ $entityBody = file_get_contents('php://input');
 $file = 'readings.txt';
 
 
-file_put_contents($file, $entityBody + "\n", FILE_APPEND | LOCK_EX);
+file_put_contents($file, $entityBody . PHP_EOL, FILE_APPEND | LOCK_EX);
