@@ -1,14 +1,14 @@
 <?php
 
-$entityBody = file_get_contents('php://input') . PHP_EOL;
+$entityBody = file_get_contents('php://input');
 
 $file = 'readings.txt';
 
-if($_GET["clear"] = "clear") {
+if(isset($_GET["clear"])) {
     file_put_contents($file, "");
     $_GET["clear"] = NULL
-    $_GET = NULL; 
 }
 
-file_put_contents($file, $entityBody, FILE_APPEND | LOCK_EX);
+file_put_contents($file, $entityBody . PHP_EOL, FILE_APPEND | LOCK_EX);
+
 ?>
