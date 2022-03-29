@@ -12,7 +12,7 @@ $file = 'readings.txt';
 
 if (!empty($_GET["clear"])) {
     file_put_contents($file, "");
-    $_GET("clear") = "";
+    $_GET["clear"] = "";
 }
 
 
